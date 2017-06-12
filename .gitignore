@@ -2,7 +2,6 @@
 .gitignore
 .gradle/
 .idea/
-build.gradle
-settings.gradle
 src/main/resources/
 src/test/
+build/
