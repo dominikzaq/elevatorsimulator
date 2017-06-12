@@ -15,6 +15,20 @@ public class Elevator implements Machine {
     public void goToFloor(int floor) {
         System.out.println("Elevator floor " + currentFloor);
         System.out.println("Elevator changed floor" + floor);
+
+        int l = Math.abs(floor - currentFloor);
+        if(currentFloor > floor) {
+            for(int i = 1; i <= l; i++) {
+                goDown();
+                currentFloor--;
+            }
+        } else {
+            for(int i = 1; i <= l; i++) {
+                goUp();
+                currentFloor++;
+            }
+        }
+
         openDoor();
         closeDoor();
     }
