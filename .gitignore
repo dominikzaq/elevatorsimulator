@@ -1,6 +1,4 @@
 
 .gradle/
 .idea/
-src/main/resources/
-src/test/
 build/
