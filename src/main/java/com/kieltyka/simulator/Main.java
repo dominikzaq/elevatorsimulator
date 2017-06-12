@@ -7,8 +7,8 @@ import javax.crypto.Mac;
  */
 public class Main {
     public static void main(String[] args) {
-        Machine m = new Elevator(0);
+        Machine m = new Elevator(10);
 
-        m.goToFloor(10);
+        m.goToFloor(2);
     }
 }

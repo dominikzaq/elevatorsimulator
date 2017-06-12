@@ -40,7 +40,7 @@ public class Elevator implements Machine {
 
     @Override
     public void goDown() {
-        System.out.println("up" + currentFloor);
+        System.out.println("down" + currentFloor);
     }
 
 
@@ -48,7 +48,7 @@ public class Elevator implements Machine {
         System.out.println("the door is opened");
     }
 
-    public void closeDoor() {
+    private void closeDoor() {
         System.out.println("the door is closed");
     }
 }
